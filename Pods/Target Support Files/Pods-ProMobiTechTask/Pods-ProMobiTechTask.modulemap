@@ -1,0 +1,6 @@
+framework module Pods_ProMobiTechTask {
+  umbrella header "Pods-ProMobiTechTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

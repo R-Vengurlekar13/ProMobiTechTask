@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220BB71226DE69EF005D5258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB71126DE69EF005D5258 /* AppDelegate.swift */; };
+		220BB71926DE69F0005D5258 /* BankHoliday.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220BB71726DE69F0005D5258 /* BankHoliday.storyboard */; };
+		220BB71C26DE69F0005D5258 /* ProMobiTechTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 220BB71A26DE69F0005D5258 /* ProMobiTechTask.xcdatamodeld */; };
+		220BB71E26DE6A21005D5258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220BB71D26DE6A21005D5258 /* Assets.xcassets */; };
+		220BB72126DE6A21005D5258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220BB71F26DE6A21005D5258 /* LaunchScreen.storyboard */; };
+		220BB73626DE7B54005D5258 /* BankHolidaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB73526DE7B54005D5258 /* BankHolidaysViewController.swift */; };
+		220BB73A26DE7EB2005D5258 /* BankHolidayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB73826DE7EB2005D5258 /* BankHolidayTableViewCell.swift */; };
+		220BB73B26DE7EB2005D5258 /* BankHolidayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 220BB73926DE7EB2005D5258 /* BankHolidayTableViewCell.xib */; };
+		220BB73F26DE81CA005D5258 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB73E26DE81CA005D5258 /* Constant.swift */; };
+		220BB74226DE9A7F005D5258 /* BankHolidayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB74126DE9A7F005D5258 /* BankHolidayModel.swift */; };
+		220BB74726DE9E47005D5258 /* BankHolidayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB74626DE9E47005D5258 /* BankHolidayViewModel.swift */; };
+		220BB74B26DE9F5B005D5258 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220BB74A26DE9F5B005D5258 /* APIManager.swift */; };
+		224DD4B326DF33DF0074BAD5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4B226DF33DF0074BAD5 /* String+Extension.swift */; };
+		224DD4BB26DF35FB0074BAD5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4BA26DF35FB0074BAD5 /* ProfileViewController.swift */; };
+		224DD4BF26DF360D0074BAD5 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4BE26DF360D0074BAD5 /* ProfileModel.swift */; };
+		224DD4C326DF36240074BAD5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4C226DF36240074BAD5 /* ProfileViewModel.swift */; };
+		224DD4C726DF364C0074BAD5 /* ProfileInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4C526DF364C0074BAD5 /* ProfileInfoTableViewCell.swift */; };
+		224DD4C826DF364C0074BAD5 /* ProfileInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 224DD4C626DF364C0074BAD5 /* ProfileInfoTableViewCell.xib */; };
+		224DD4CB26DF3B880074BAD5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4CA26DF3B880074BAD5 /* UIImageView+Extension.swift */; };
+		224DD4D226DF63B90074BAD5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4D126DF63B90074BAD5 /* Reachability.swift */; };
+		224DD4D726DF64C80074BAD5 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4D626DF64C80074BAD5 /* PersistentStorage.swift */; };
+		224DD4E626DF7E6F0074BAD5 /* BankHolidayEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4E526DF7E6E0074BAD5 /* BankHolidayEventManager.swift */; };
+		224DD4EB26DF87B40074BAD5 /* ProfileInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4EA26DF87B30074BAD5 /* ProfileInfoManager.swift */; };
+		224DD4F326DF8E700074BAD5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4F226DF8E700074BAD5 /* BaseViewController.swift */; };
+		224DD4FB26DFA5F40074BAD5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224DD4FA26DFA5F40074BAD5 /* Profile.storyboard */; };
+		224DD4FF26DFA75B0074BAD5 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD4FE26DFA75B0074BAD5 /* TabBarViewController.swift */; };
+		A1AD3A6DA97D64920A785CF5 /* Pods_ProMobiTechTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEB7FAA0B6CCBB488857E9E /* Pods_ProMobiTechTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		220BB70E26DE69EF005D5258 /* ProMobiTechTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProMobiTechTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220BB71126DE69EF005D5258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		220BB71826DE69F0005D5258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BankHoliday.storyboard; sourceTree = "<group>"; };
+		220BB71B26DE69F0005D5258 /* ProMobiTechTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProMobiTechTask.xcdatamodel; sourceTree = "<group>"; };
+		220BB71D26DE6A21005D5258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		220BB72026DE6A21005D5258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		220BB72226DE6A21005D5258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220BB73526DE7B54005D5258 /* BankHolidaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidaysViewController.swift; sourceTree = "<group>"; };
+		220BB73826DE7EB2005D5258 /* BankHolidayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidayTableViewCell.swift; sourceTree = "<group>"; };
+		220BB73926DE7EB2005D5258 /* BankHolidayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankHolidayTableViewCell.xib; sourceTree = "<group>"; };
+		220BB73E26DE81CA005D5258 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		220BB74126DE9A7F005D5258 /* BankHolidayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidayModel.swift; sourceTree = "<group>"; };
+		220BB74626DE9E47005D5258 /* BankHolidayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidayViewModel.swift; sourceTree = "<group>"; };
+		220BB74A26DE9F5B005D5258 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		224DD4B226DF33DF0074BAD5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		224DD4BA26DF35FB0074BAD5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		224DD4BE26DF360D0074BAD5 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		224DD4C226DF36240074BAD5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		224DD4C526DF364C0074BAD5 /* ProfileInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoTableViewCell.swift; sourceTree = "<group>"; };
+		224DD4C626DF364C0074BAD5 /* ProfileInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoTableViewCell.xib; sourceTree = "<group>"; };
+		224DD4CA26DF3B880074BAD5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		224DD4D126DF63B90074BAD5 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		224DD4D626DF64C80074BAD5 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		224DD4E526DF7E6E0074BAD5 /* BankHolidayEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHolidayEventManager.swift; sourceTree = "<group>"; };
+		224DD4EA26DF87B30074BAD5 /* ProfileInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoManager.swift; sourceTree = "<group>"; };
+		224DD4F226DF8E700074BAD5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		224DD4FA26DFA5F40074BAD5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		224DD4FE26DFA75B0074BAD5 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8D96C86CEAA9C451F043B430 /* Pods-ProMobiTechTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProMobiTechTask.release.xcconfig"; path = "Target Support Files/Pods-ProMobiTechTask/Pods-ProMobiTechTask.release.xcconfig"; sourceTree = "<group>"; };
+		CBEB7FAA0B6CCBB488857E9E /* Pods_ProMobiTechTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProMobiTechTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E894B92384A4BAF82916671B /* Pods-ProMobiTechTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProMobiTechTask.debug.xcconfig"; path = "Target Support Files/Pods-ProMobiTechTask/Pods-ProMobiTechTask.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220BB70B26DE69EF005D5258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AD3A6DA97D64920A785CF5 /* Pods_ProMobiTechTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220BB70526DE69EF005D5258 = {
+			isa = PBXGroup;
+			children = (
+				220BB71026DE69EF005D5258 /* ProMobiTechTask */,
+				220BB70F26DE69EF005D5258 /* Products */,
+				32212393E528B297800AD396 /* Pods */,
+				F5260DFABB787E661C8986E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		220BB70F26DE69EF005D5258 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220BB70E26DE69EF005D5258 /* ProMobiTechTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220BB71026DE69EF005D5258 /* ProMobiTechTask */ = {
+			isa = PBXGroup;
+			children = (
+				220BB72926DE6A3C005D5258 /* Defaults */,
+				224DD4CD26DF4F890074BAD5 /* Database */,
+				224DD4D526DF64AB0074BAD5 /* Database support files */,
+				224DD4F126DF8D250074BAD5 /* Helper Classes */,
+				224DD4B126DF33BD0074BAD5 /* Extensions */,
+				220BB74926DE9F42005D5258 /* API Manager */,
+				220BB73D26DE81B7005D5258 /* Constant */,
+				220BB72A26DE6E3A005D5258 /* Layout */,
+			);
+			path = ProMobiTechTask;
+			sourceTree = "<group>";
+		};
+		220BB72926DE6A3C005D5258 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				220BB72226DE6A21005D5258 /* Info.plist */,
+				220BB71F26DE6A21005D5258 /* LaunchScreen.storyboard */,
+				220BB71126DE69EF005D5258 /* AppDelegate.swift */,
+				220BB71D26DE6A21005D5258 /* Assets.xcassets */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		220BB72A26DE6E3A005D5258 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4FD26DFA6D70074BAD5 /* Tab bar */,
+				220BB73226DE700A005D5258 /* Bank Holidays */,
+				220BB73326DE7032005D5258 /* Profile */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		220BB72B26DE6E45005D5258 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				220BB71726DE69F0005D5258 /* BankHoliday.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		220BB72E26DE6F33005D5258 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				220BB74626DE9E47005D5258 /* BankHolidayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		220BB72F26DE6F3F005D5258 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				220BB73826DE7EB2005D5258 /* BankHolidayTableViewCell.swift */,
+				220BB73926DE7EB2005D5258 /* BankHolidayTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		220BB73026DE6F46005D5258 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				220BB73526DE7B54005D5258 /* BankHolidaysViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		220BB73226DE700A005D5258 /* Bank Holidays */ = {
+			isa = PBXGroup;
+			children = (
+				220BB72F26DE6F3F005D5258 /* Cell */,
+				220BB74426DE9A88005D5258 /* Model */,
+				220BB72B26DE6E45005D5258 /* View */,
+				220BB72E26DE6F33005D5258 /* ViewModel */,
+				220BB73026DE6F46005D5258 /* Controller */,
+			);
+			path = "Bank Holidays";
+			sourceTree = "<group>";
+		};
+		220BB73326DE7032005D5258 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4B926DF35D00074BAD5 /* Cell */,
+				224DD4B826DF35C80074BAD5 /* View */,
+				224DD4B726DF35C00074BAD5 /* ViewModel */,
+				224DD4B626DF35BA0074BAD5 /* Model */,
+				224DD4B526DF35B30074BAD5 /* Controller */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		220BB73D26DE81B7005D5258 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				220BB73E26DE81CA005D5258 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		220BB74426DE9A88005D5258 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				220BB74126DE9A7F005D5258 /* BankHolidayModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		220BB74926DE9F42005D5258 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				220BB74A26DE9F5B005D5258 /* APIManager.swift */,
+				224DD4D126DF63B90074BAD5 /* Reachability.swift */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		224DD4B126DF33BD0074BAD5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4B226DF33DF0074BAD5 /* String+Extension.swift */,
+				224DD4CA26DF3B880074BAD5 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		224DD4B526DF35B30074BAD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4BA26DF35FB0074BAD5 /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		224DD4B626DF35BA0074BAD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4BE26DF360D0074BAD5 /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		224DD4B726DF35C00074BAD5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4C226DF36240074BAD5 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		224DD4B826DF35C80074BAD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4FA26DFA5F40074BAD5 /* Profile.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		224DD4B926DF35D00074BAD5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4C526DF364C0074BAD5 /* ProfileInfoTableViewCell.swift */,
+				224DD4C626DF364C0074BAD5 /* ProfileInfoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		224DD4CD26DF4F890074BAD5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				220BB71A26DE69F0005D5258 /* ProMobiTechTask.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		224DD4D526DF64AB0074BAD5 /* Database support files */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4D626DF64C80074BAD5 /* PersistentStorage.swift */,
+				224DD4E426DF7E430074BAD5 /* Managers */,
+			);
+			path = "Database support files";
+			sourceTree = "<group>";
+		};
+		224DD4E426DF7E430074BAD5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4E526DF7E6E0074BAD5 /* BankHolidayEventManager.swift */,
+				224DD4EA26DF87B30074BAD5 /* ProfileInfoManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		224DD4F126DF8D250074BAD5 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4F226DF8E700074BAD5 /* BaseViewController.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		224DD4FD26DFA6D70074BAD5 /* Tab bar */ = {
+			isa = PBXGroup;
+			children = (
+				224DD4FE26DFA75B0074BAD5 /* TabBarViewController.swift */,
+			);
+			path = "Tab bar";
+			sourceTree = "<group>";
+		};
+		32212393E528B297800AD396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E894B92384A4BAF82916671B /* Pods-ProMobiTechTask.debug.xcconfig */,
+				8D96C86CEAA9C451F043B430 /* Pods-ProMobiTechTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5260DFABB787E661C8986E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBEB7FAA0B6CCBB488857E9E /* Pods_ProMobiTechTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220BB70D26DE69EF005D5258 /* ProMobiTechTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220BB72526DE6A21005D5258 /* Build configuration list for PBXNativeTarget "ProMobiTechTask" */;
+			buildPhases = (
+				813B19E230D9026F29488E00 /* [CP] Check Pods Manifest.lock */,
+				220BB70A26DE69EF005D5258 /* Sources */,
+				220BB70B26DE69EF005D5258 /* Frameworks */,
+				220BB70C26DE69EF005D5258 /* Resources */,
+				DC819A7B2FD53E9700CC9A44 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProMobiTechTask;
+			productName = ProMobiTechTask;
+			productReference = 220BB70E26DE69EF005D5258 /* ProMobiTechTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220BB70626DE69EF005D5258 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					220BB70D26DE69EF005D5258 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 220BB70926DE69EF005D5258 /* Build configuration list for PBXProject "ProMobiTechTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220BB70526DE69EF005D5258;
+			productRefGroup = 220BB70F26DE69EF005D5258 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220BB70D26DE69EF005D5258 /* ProMobiTechTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220BB70C26DE69EF005D5258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224DD4FB26DFA5F40074BAD5 /* Profile.storyboard in Resources */,
+				220BB72126DE6A21005D5258 /* LaunchScreen.storyboard in Resources */,
+				220BB71E26DE6A21005D5258 /* Assets.xcassets in Resources */,
+				220BB73B26DE7EB2005D5258 /* BankHolidayTableViewCell.xib in Resources */,
+				224DD4C826DF364C0074BAD5 /* ProfileInfoTableViewCell.xib in Resources */,
+				220BB71926DE69F0005D5258 /* BankHoliday.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		813B19E230D9026F29488E00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProMobiTechTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC819A7B2FD53E9700CC9A44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProMobiTechTask/Pods-ProMobiTechTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProMobiTechTask/Pods-ProMobiTechTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProMobiTechTask/Pods-ProMobiTechTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220BB70A26DE69EF005D5258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220BB71226DE69EF005D5258 /* AppDelegate.swift in Sources */,
+				224DD4B326DF33DF0074BAD5 /* String+Extension.swift in Sources */,
+				224DD4CB26DF3B880074BAD5 /* UIImageView+Extension.swift in Sources */,
+				224DD4BB26DF35FB0074BAD5 /* ProfileViewController.swift in Sources */,
+				224DD4F326DF8E700074BAD5 /* BaseViewController.swift in Sources */,
+				220BB74226DE9A7F005D5258 /* BankHolidayModel.swift in Sources */,
+				224DD4C726DF364C0074BAD5 /* ProfileInfoTableViewCell.swift in Sources */,
+				220BB74B26DE9F5B005D5258 /* APIManager.swift in Sources */,
+				224DD4FF26DFA75B0074BAD5 /* TabBarViewController.swift in Sources */,
+				224DD4EB26DF87B40074BAD5 /* ProfileInfoManager.swift in Sources */,
+				220BB73626DE7B54005D5258 /* BankHolidaysViewController.swift in Sources */,
+				224DD4D726DF64C80074BAD5 /* PersistentStorage.swift in Sources */,
+				224DD4E626DF7E6F0074BAD5 /* BankHolidayEventManager.swift in Sources */,
+				224DD4D226DF63B90074BAD5 /* Reachability.swift in Sources */,
+				224DD4C326DF36240074BAD5 /* ProfileViewModel.swift in Sources */,
+				220BB71C26DE69F0005D5258 /* ProMobiTechTask.xcdatamodeld in Sources */,
+				224DD4BF26DF360D0074BAD5 /* ProfileModel.swift in Sources */,
+				220BB73A26DE7EB2005D5258 /* BankHolidayTableViewCell.swift in Sources */,
+				220BB73F26DE81CA005D5258 /* Constant.swift in Sources */,
+				220BB74726DE9E47005D5258 /* BankHolidayViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		220BB71726DE69F0005D5258 /* BankHoliday.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220BB71826DE69F0005D5258 /* Base */,
+			);
+			name = BankHoliday.storyboard;
+			sourceTree = "<group>";
+		};
+		220BB71F26DE6A21005D5258 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				220BB72026DE6A21005D5258 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		220BB72326DE6A21005D5258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		220BB72426DE6A21005D5258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		220BB72626DE6A21005D5258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E894B92384A4BAF82916671B /* Pods-ProMobiTechTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5WWXXR39R;
+				INFOPLIST_FILE = ProMobiTechTask/Defaults/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contera.ProMobiTechTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		220BB72726DE6A21005D5258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D96C86CEAA9C451F043B430 /* Pods-ProMobiTechTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5WWXXR39R;
+				INFOPLIST_FILE = ProMobiTechTask/Defaults/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contera.ProMobiTechTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220BB70926DE69EF005D5258 /* Build configuration list for PBXProject "ProMobiTechTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BB72326DE6A21005D5258 /* Debug */,
+				220BB72426DE6A21005D5258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220BB72526DE6A21005D5258 /* Build configuration list for PBXNativeTarget "ProMobiTechTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220BB72626DE6A21005D5258 /* Debug */,
+				220BB72726DE6A21005D5258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		220BB71A26DE69F0005D5258 /* ProMobiTechTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				220BB71B26DE69F0005D5258 /* ProMobiTechTask.xcdatamodel */,
+			);
+			currentVersion = 220BB71B26DE69F0005D5258 /* ProMobiTechTask.xcdatamodel */;
+			path = ProMobiTechTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 220BB70626DE69EF005D5258 /* Project object */;
+}

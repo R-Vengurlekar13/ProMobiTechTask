@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iqi-A8-Zo3">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bank Holidays-->
+        <scene sceneID="kdR-R4-0gW">
+            <objects>
+                <viewController id="XLs-Nl-v9U" customClass="BankHolidaysViewController" customModule="ProMobiTechTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZGu-1c-VTe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eF1-tq-dBj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XLs-Nl-v9U" id="dcH-zJ-1op"/>
+                                    <outlet property="delegate" destination="XLs-Nl-v9U" id="Lqr-d7-nUu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aFz-yM-Lbr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aFz-yM-Lbr" firstAttribute="bottom" secondItem="eF1-tq-dBj" secondAttribute="bottom" id="ChF-fp-nCA"/>
+                            <constraint firstItem="eF1-tq-dBj" firstAttribute="leading" secondItem="aFz-yM-Lbr" secondAttribute="leading" id="hLg-ef-VQr"/>
+                            <constraint firstItem="eF1-tq-dBj" firstAttribute="top" secondItem="aFz-yM-Lbr" secondAttribute="top" id="ord-IS-xio"/>
+                            <constraint firstItem="aFz-yM-Lbr" firstAttribute="trailing" secondItem="eF1-tq-dBj" secondAttribute="trailing" id="rdH-fq-sgk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bank Holidays" largeTitleDisplayMode="always" id="63z-S4-RFB"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tblViwBankHolidays" destination="eF1-tq-dBj" id="Exx-O5-Ozu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FE-hX-oLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486.95652173913049" y="-474.45652173913049"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="Dl3-Rh-ATZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iqi-A8-Zo3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="square.grid.2x2.fill" catalog="system" id="28f-gr-Lqw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0GM-MI-Kg2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XLs-Nl-v9U" kind="relationship" relationship="rootViewController" id="lKN-gZ-fxq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUc-QQ-ELM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420.28985507246381" y="-474.45652173913049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
